@@ -36,5 +36,4 @@ def populate(empresa):
                 database.add(new_lead)
                 database.commit()
                 
-    os.remove(
-        './leads/{empresa.name_project}/rd-bild-leads-todos-os-contatos-da-base-de-leads.csv')
+    os.remove(rf'.\leads\{empresa.name_project}\rd-bild-leads-todos-os-contatos-da-base-de-leads.csv')
